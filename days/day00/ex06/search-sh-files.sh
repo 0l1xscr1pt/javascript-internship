@@ -1,1 +1,1 @@
-find . | grep '.*[.]sh'| sed "s/...$//"| sed 's/.*\///'
+find . -type f | grep '.*[.]sh'| sed "s/...$//"| sed 's/.*\///'
