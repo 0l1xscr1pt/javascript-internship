@@ -1,3 +1,3 @@
-mkdir inception.sh
-mkdir Oto1
+touch inception.sh
+touch 0to1
 
