@@ -1,1 +1,1 @@
-touch inception.sh |bash inception.sh
+touch inception.sh |bash inception.sh | echo >>0to1
