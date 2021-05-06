@@ -1,1 +1,1 @@
-mkdir Oto1
+touch 0to1
