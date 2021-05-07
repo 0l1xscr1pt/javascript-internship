@@ -8,7 +8,14 @@ function printAlphabet(capitalized) {
 
     console.log(alphabet);
 
+    let printAlphabet = true;
+
+    isCorrect ? console.log(capitalized) : console.log(‘Incorrect!’)
+
 }
+
+
+
 
 module.exports = {printAlphabet};
 
@@ -25,11 +32,6 @@ if (isNightTime){
 }else{
     console.log(‘Turn off the lights!’);
 }
-
-
-let isCorrect = true;
-
-isCorrect ? console.log(‘Correct!’) : console.log(‘Incorrect!’);
 
 
 
