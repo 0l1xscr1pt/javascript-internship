@@ -15,8 +15,6 @@ function printAlphabet(capitalized) {
 }
 
 
-
-
 module.exports = {printAlphabet};
 
 
