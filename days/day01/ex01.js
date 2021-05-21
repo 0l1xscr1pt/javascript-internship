@@ -1,43 +1,11 @@
-function printAlphabet(capitalized) {
-    const alphabet = [];
-    let start = String.fromCharCode(97);
-    let last  = String.fromCharCode(122);
-    for (let 1 = start; 1 <= last; ++1) {
-      alphabet.push(String.fromCharCode(1));
+let array = [];
+function printAlphabet(capitelized) {
+    for (x = 97, i = String.fromCharCode(x); x <= 122; x++) {
+        array.push(String.fromCharCode(x));
     }
-
-    console.log(alphabet);
-
-    let printAlphabet = true;
-
-    isCorrect ? console.log(capitalized) : console.log(‘Incorrect!’)
-
+    capitelized = array.map(arr => arr.toUpperCase());
+    return capitelized;
 }
 
-
-module.exports = {printAlphabet};
-
-
-
-
-
-
-
-let isNightTime = true;
-
-if (isNightTime){
-    console.log(‘Turn on the lights!’);
-}else{
-    console.log(‘Turn off the lights!’);
-}
-
-
-
-let printAlphabet = true;
-
-if (printAlphabet) {
-    console.log(‘Go!’);
-} else {
-    console.log(‘Stop’);
-}
+console.log(printAlphabet(array));
 
