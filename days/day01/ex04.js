@@ -1,5 +1,3 @@
-let n = -20;
-
 function isNegative(n) {
     if (n > 0) {
         return true;
@@ -8,6 +6,6 @@ function isNegative(n) {
     }
 }
 
-console.log(isNegative(n));
+console.log(isNegative(20));
 
 module.exports = {isNegative}
