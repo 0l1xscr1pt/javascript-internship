@@ -4,18 +4,18 @@ function printAlphabetReversed(capitelized, reverse) {
     for (x = 97, i = String.fromCharCode(x); x <= 122; x++) {
         alphabet += String.fromCharCode(x);
     }
-    if (alphabet){
+    if (alphabet) {
         capitelized = alphabet.toUpperCase();
-        return capitelized;
     }
-    reverse = alphabet.reduceRight((acc, curr) => acc.concat(curr));
-    return reverse;
-
+    if (alphabet) {
+        reverse = "";
+        for (var i = capitelized.length - 1; i >= 0; i--) {
+            reverse += capitelized[i];
+        }
+        console.log(reverse);
+    }
 }
 
-console.log(printAlphabetReversed(alphabet));
+printAlphabetReversed();
 
 module.exports = {printAlphabetReversed};
-
-//function -25 lignes
-//split et reverse interdites
