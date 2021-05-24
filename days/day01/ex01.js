@@ -6,10 +6,10 @@ function printAlphabet(capitelized) {
     }
     if (alphabet){
     capitelized = alphabet.toUpperCase();
-    return capitelized;
+        console.log(capitelized)
     }
 }
+printAlphabet();
 
-console.log(printAlphabet(alphabet));
 module.exports = {printAlphabet};
 
