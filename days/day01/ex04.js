@@ -6,4 +6,6 @@ function isNegative(n) {
     }
 }
 
+console.log(isNegative(10));
+
 module.exports = {isNegative}
