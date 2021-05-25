@@ -1,6 +1,5 @@
-let alphabet = "";
-
 function printAlphabetReversed(capitelized, reverse) {
+    let alphabet = "";
     for (x = 97, i = String.fromCharCode(x); x <= 122; x++) {
         alphabet += String.fromCharCode(x);
     }
