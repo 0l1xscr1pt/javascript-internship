@@ -8,7 +8,8 @@ function printComb() {
                 y > z && x > y ? numbers += x + ", " : ''
             }
         }
-    }console.log(numbers.slice(0, -2));
+    }
+    console.log(numbers.slice(0, -2));
 }
 
 module.exports = {printComb}
