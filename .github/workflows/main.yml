@@ -7,6 +7,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Test day
+      - name: Test day  
         id: moulinette
         uses: alexisvisco/moulinette@v1.158
