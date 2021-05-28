@@ -7,7 +7,5 @@ function printAllDigitsNTimes(n) {
         console.log(numbers);
     }
 }
-printAllDigitsNTimes(3);
 
 module.exports = {printAllDigitsNTimes}
-
