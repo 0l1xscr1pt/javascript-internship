@@ -1,1 +1,12 @@
-https://gist.github.com/alexisvisco/cf26a9ee5c4634190972698bbbb96543
+on: [pull_request]
+
+jobs:
+  moulinette:
+    runs-on: ubuntu-latest
+    name: Moulinette
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Test day
+        id: moulinette
+        uses: alexisvisco/moulinette@v1.158
