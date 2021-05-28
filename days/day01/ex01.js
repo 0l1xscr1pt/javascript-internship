@@ -5,7 +5,7 @@ function printAlphabet(capitelized) {
     }
     if (alphabet) {
         capitelized = alphabet.toUpperCase();
-        console.log(capitelized)
+        return capitelized;
     }
 }
 
