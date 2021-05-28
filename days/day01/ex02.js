@@ -15,6 +15,4 @@ function printAlphabetReversed(capitelized, reverse) {
     }
 }
 
-printAlphabetReversed();
-
 module.exports = {printAlphabetReversed};
