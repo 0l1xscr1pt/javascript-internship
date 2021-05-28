@@ -1,24 +1,16 @@
-function printComb () {
-    for (let a = 0; a <= 9; a++) {
-        return a;
+function printComb() {
+    let numbers = "";
+    for (let z = 0, y = 1; z < 10; z++) {
+        for (let y = 1; y < 10; y++) {
+            for (let x = 2; x < 10; x++) {
+                y > z && x > y ? numbers += z : ''
+                y > z && x > y ? numbers += y : ''
+                y > z && x > y ? numbers += x + ", " : ''
+            }
+        }
     }
-    //b = 1 -> 8 tours
-    // c = 2 -> 7 tours
+    console.log(numbers.slice(0, -2));
 }
 
-console.log(printComb());
-
-//module.exports = {printComb}
-
-
-
-
-//ecrire fontion affiche dans ordre croissant
-//toutes differentes combi de 3 chiffres différents dans l'ordre croissant
-
-//fonction moins de 25 lignes
-
-//ex : 012, 013, 014, 015, 016, 017, 018, 019, 023, ..., 789
-// not 987 -> 789 present
-// not 999 -> 3 same nombers
-//not 020 -> 0 present x 2
+printComb();
+module.exports = {printComb}
