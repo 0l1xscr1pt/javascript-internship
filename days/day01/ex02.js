@@ -13,7 +13,7 @@ function printAlphabetReversed(capitelized, reverse) {
             }
             console.log(reverse);
         } else {
-            console.log(alphabet);
+            console.log(capitelized);
         }
     } else {
         console.log(alphabet);
