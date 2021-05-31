@@ -5,17 +5,18 @@ function printAlphabetReversed(capitelized, reverse) {
     }
     if (capitelized === true) {
         capitelized = alphabet.toUpperCase();
+
+        if (reverse === true) {
+            reverse = "";
+            for (let i = capitelized.length - 1; i >= 0; i--) {
+                reverse += capitelized[i];
+            }
+            console.log(reverse);
+        } else {
+            console.log(alphabet);
+        }
     } else {
         console.log(alphabet);
-    }
-    if (reverse === true) {
-        reverse = "";
-        for (var i = capitelized.length - 1; i >= 0; i--) {
-            reverse += capitelized[i];
-        }
-        console.log(reverse);
-    } else {
-        console.log(capitelized);
     }
 }
 
