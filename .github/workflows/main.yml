@@ -9,4 +9,4 @@ jobs:
         uses: actions/checkout@v2
       - name: Test day  
         id: moulinette
-        uses: alexisvisco/moulinette@v1.158
+        uses: alexisvisco/moulinette@v1.161
