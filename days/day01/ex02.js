@@ -1,23 +1,21 @@
 function printAlphabetReversed(capitelized, reverse) {
     let alphabet = "";
-    for (x = 97, i = String.fromCharCode(x); x <= 122; x++) {
+    for (let x = 97, i = String.fromCharCode(x); x <= 122; x++) {
         alphabet += String.fromCharCode(x);
     }
-    if (capitelized === true) {
-        capitelized = alphabet.toUpperCase();
 
-        if (reverse === true) {
-            reverse = "";
-            for (let i = capitelized.length - 1; i >= 0; i--) {
-                reverse += capitelized[i];
-            }
-            console.log(reverse);
-        } else {
-            console.log(capitelized);
-        }
-    } else {
-        console.log(alphabet);
+    if (capitelized === true) {
+        alphabet = alphabet.toUpperCase();
     }
+
+    if (reverse === true) {
+        function reverse(alphabet) {
+            return alphabet ? reverse(alphabet.substr(1)) + alphabet[0] : alphabet;
+        }
+
+        alphabet = reverse(alphabet);
+    }
+    console.log(alphabet);
 }
 
 module.exports = {printAlphabetReversed};
