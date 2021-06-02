@@ -15,5 +15,5 @@ function divMod(n1, n2) {
     return object
 }
 
-console.log(divMod(12, 2))
+divMod(12, 2)
 module.exports = {divMod}
