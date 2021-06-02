@@ -5,5 +5,5 @@ function atoi(numberAsString) {
         return 0
     }
 }
-console.log(atoi(+ '0120'))
+return atoi(+ '0120')
 module.exports = {atoi}
