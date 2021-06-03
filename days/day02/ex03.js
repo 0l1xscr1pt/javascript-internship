@@ -13,5 +13,4 @@ function sortInteger(numbers) {
     return numbers;
 }
 
-sortInteger([-100, -250, 0, 3, -5, 200])
 module.exports = {sortInteger}
