@@ -1,9 +1,10 @@
 function atoi(numberAsString) {
-    if (numberAsString > 1) {
-        return numberAsString - '';
-    } else if (numberAsString === 0) {
-        return 0
-    }
+    let test = 0;
+    for (let a = 0, z = numberAsString.length;
+        a < numberAsString.length, z > 0; a++, z--) {
+        test += numberAsString[a] * (1 + '0'.repeat(z - 1));
+    } 
+    return test
 }
 
-module.exports = {atoi}
+module.exports = { atoi }
