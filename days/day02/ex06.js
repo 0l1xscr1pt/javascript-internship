@@ -17,3 +17,5 @@ function discard(list, predicate) {
     }
     return newList;
 }
+
+module.exports = { keep, discard }
