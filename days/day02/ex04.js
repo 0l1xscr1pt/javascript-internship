@@ -12,7 +12,7 @@ function toRna(rna) {
         } else if (letter === 'A') {
             alpha += A;
         } else {
-            alpha += '';
+            alpha += ' ';
         }
     }
     console.log(alpha)
