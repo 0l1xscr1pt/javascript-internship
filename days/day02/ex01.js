@@ -1,7 +1,7 @@
 function divMod(n1, n2) {
     let result = n1 / n2
     let object = {
-        div: Math.round(result),
+        div: Math.floor(result),
         mod: fits()
     }
 
