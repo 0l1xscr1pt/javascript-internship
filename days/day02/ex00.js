@@ -1,4 +1,4 @@
-function atoi(numberAsString) {
+function basicAtoi(numberAsString) {
     let test = 0;
     for (let a = 0, z = numberAsString.length;
         a < numberAsString.length, z > 0; a++, z--) {
@@ -7,4 +7,4 @@ function atoi(numberAsString) {
     return test
 }
 
-module.exports = { atoi }
+module.exports = { basicAtoi }
