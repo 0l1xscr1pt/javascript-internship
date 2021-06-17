@@ -15,7 +15,7 @@ function toRna(rna) {
             alpha += ' ';
         }
     }
-    console.log(alpha)
+    return alpha;
 }
 
 module.exports = {toRna}
