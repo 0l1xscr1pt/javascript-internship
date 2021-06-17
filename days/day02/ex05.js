@@ -30,7 +30,7 @@ class BankAccount {
     }
 
     withdraw(money) {
-        if (this._open === true && this._balance >= money) {
+        if (this._open === true && this._balance >= money && money >= 0) {
             return this._balance = this._balance - money;
         } else {
             throw new ValueError;
