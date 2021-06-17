@@ -4,15 +4,24 @@ class BankAccount {
         this._balance = 0;
     }
     open() {
-        return this._open = true;
+        if (this._open === false) {
+            return this._open = true;
+        } else {
+            throw new ValueError;
+        }
     }
 
     close() {
-        return this._open = false;
+        //this._open = false
+        if (this._open === true) {
+            return this._open = false;
+        } else {
+            throw new ValueError;
+        }
     }
 
     deposit(money) {
-        if (BankAccount._open = true && money >= 0) {
+        if (this._open === true && money >= 0) {
             return this._balance = this._balance + money;
         } else {
             throw new ValueError;
@@ -20,7 +29,7 @@ class BankAccount {
     }
 
     withdraw(money) {
-        if (BankAccount._open = true && this._balance >= money) {
+        if (this._open === true && this._balance >= money) {
             return this._balance = this._balance - money;
         } else {
             throw new ValueError;
