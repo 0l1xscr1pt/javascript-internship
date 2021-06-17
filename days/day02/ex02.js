@@ -1,6 +1,6 @@
 function swap(o1, o2) {
 
-    [ref1.a, ref2.a] = [ref2.a, ref1.a];
+    [o1.a, o2.a] = [o2.a, o1.a];
     console.log(o1, o2)
 
 }
