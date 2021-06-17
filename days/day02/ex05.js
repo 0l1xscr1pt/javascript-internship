@@ -13,6 +13,7 @@ class BankAccount {
 
     close() {
         //this._open = false
+        this._balance = 0;
         if (this._open === true) {
             return this._open = false;
         } else {
