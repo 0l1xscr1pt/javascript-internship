@@ -9,11 +9,14 @@
     </head>
     
     <body>
+    <script src="test.js"></script>
+
         <div class="bloc-of-tasks-parent">
-            <div id="parent-1">
+            
+            <div id="parent-header">
                 <div class="round">
                 </div>
-                <div class="content-bloc-1">
+                <div class="title">
                     <h1><strong>School</strong></h1>
                 </div>
                 <div class="tree-points">
@@ -21,152 +24,197 @@
                 </div>
             </div>
 
-            <div id="parent-2">
-                <div class="content-bloc-2">
-                    <p>Add a task</p>
+            <div id="parent-rect-add">
+                <div id="parent-align">
+                    <input type="text" class="text" placeholder="Add a task..."/>
+                    <button class="icon" onclick="createNewBloc()">
+                        <svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 0C2.23858 0 0 2.23858 0 5V12C0 14.7614 
+                        2.23858 17 5 17H12C14.7614 17 17 14.7614 17 12V5C17 2.23858 14.7614 0 12 0H5ZM9.125 
+                        9.125H12.875V7.875H9.125V4.125H7.875V7.875H4.125V9.125H7.875V12.875H9.125V9.125Z" fill="#FB77A1"/>
+                        </svg>
+                    </button>
                 </div>
-                <div class ="add-task">
-                    <svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5 0C2.23858 0 0 2.23858 0 5V12C0 14.7614 
-                    2.23858 17 5 17H12C14.7614 17 17 14.7614 17 12V5C17 2.23858 14.7614 0 12 0H5ZM9.125 
-                    9.125H12.875V7.875H9.125V4.125H7.875V7.875H4.125V9.125H7.875V12.875H9.125V9.125Z" fill="#FB77A1"/>
-                    </svg>
-                </div>
-                <div class="rectangle-with-border">
+                <div class="rectangle-with-border"></div>
+            </div>
+
+            <div id="title-parent">
+                <div class="content-title">
+                    <strong><p>22/06/2021</p></strong>
                 </div>
             </div>
 
-            <div id="parent-3">
-                <div class="content-bloc-3">
-                    <p>Finish the essay collaboration</p>
+            <div id="parent-rect">
+                <div id="parent-align">
+                    <input type="text" class="text"/>
+                        <!-- Finish the essay collaboration -->
+
+                    <button class="icon" onclick="changeIcon()">
+                        <svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1" fill="white">
+                            <path d="M0 5C0 2.23858 2.23858 0 5 0H12C14.7614 0 17 2.23858 17 5V12C17 14.7614 14.7614 17 12 
+                            17H5C2.23858 17 0 14.7614 0 12V5Z"/></mask><path d="M5 2H12V-2H5V2ZM15 5V12H19V5H15ZM12 15H5V19H
+                            12V15ZM2 12V5H-2V12H2ZM5 15C3.34315 15 2 13.6569 2 12H-2C-2 15.866 1.13401 19 5 19V15ZM15 12C15 
+                            13.6569 13.6569 15 12 15V19C15.866 19 19 15.866 19 12H15ZM12 2C13.6569 2 15 3.34315 15 5H19C19 
+                            1.13401 15.866 -2 12 -2V2ZM5 -2C1.13401 -2 -2 1.13401 -2 5H2C2 3.34315 3.34315 2 5 2V-2Z" 
+                            fill="#FB77A1" mask="url(#path-1-inside-1)"/>
+                        </svg>
+                    </button>
                 </div>
-                <div class ="task-empty">
-                    <svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <mask id="path-1-inside-1" fill="white">
-                        <path d="M0 5C0 2.23858 2.23858 0 5 0H12C14.7614 0 17 2.23858 17 5V12C17 14.7614 14.7614 17 12 
-                        17H5C2.23858 17 0 14.7614 0 12V5Z"/></mask><path d="M5 2H12V-2H5V2ZM15 5V12H19V5H15ZM12 15H5V19H
-                        12V15ZM2 12V5H-2V12H2ZM5 15C3.34315 15 2 13.6569 2 12H-2C-2 15.866 1.13401 19 5 19V15ZM15 12C15 
-                        13.6569 13.6569 15 12 15V19C15.866 19 19 15.866 19 12H15ZM12 2C13.6569 2 15 3.34315 15 5H19C19 
-                        1.13401 15.866 -2 12 -2V2ZM5 -2C1.13401 -2 -2 1.13401 -2 5H2C2 3.34315 3.34315 2 5 2V-2Z" 
-                        fill="#FB77A1" mask="url(#path-1-inside-1)"/>
-                    </svg>
+                <div class="rectangle"></div>
+            </div>
+
+            <div id="parent-rect">
+                <div id="parent-align">
+                    <input type="text" class="text"/>
+                        <!-- Send collaboration files to Jerusha -->
+
+                    <button class="icon" onclick="changeIcon()">
+                        <svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1" fill="white">
+                            <path d="M0 5C0 2.23858 2.23858 0 5 0H12C14.7614 0 17 2.23858 17 5V12C17 14.7614 14.7614 17 12 
+                            17H5C2.23858 17 0 14.7614 0 12V5Z"/></mask><path d="M5 2H12V-2H5V2ZM15 5V12H19V5H15ZM12 15H5V19H
+                            12V15ZM2 12V5H-2V12H2ZM5 15C3.34315 15 2 13.6569 2 12H-2C-2 15.866 1.13401 19 5 19V15ZM15 12C15 
+                            13.6569 13.6569 15 12 15V19C15.866 19 19 15.866 19 12H15ZM12 2C13.6569 2 15 3.34315 15 5H19C19 
+                            1.13401 15.866 -2 12 -2V2ZM5 -2C1.13401 -2 -2 1.13401 -2 5H2C2 3.34315 3.34315 2 5 2V-2Z" 
+                            fill="#FB77A1" mask="url(#path-1-inside-1)"/>
+                        </svg>
+                    </button>
                 </div>
-                <div class="rectangle">
+                <div class="rectangle"></div>
+            </div>
+
+            <div id="parent-rect">
+                <div id="parent-align">
+                    <input type="text" class="text"/>
+                        <!-- Finish the essay collaboration -->
+
+                    <button class="icon" onclick="changeIcon()">
+                        <svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1" fill="white">
+                            <path d="M0 5C0 2.23858 2.23858 0 5 0H12C14.7614 0 17 2.23858 17 5V12C17 14.7614 14.7614 17 12 
+                            17H5C2.23858 17 0 14.7614 0 12V5Z"/></mask><path d="M5 2H12V-2H5V2ZM15 5V12H19V5H15ZM12 15H5V19H
+                            12V15ZM2 12V5H-2V12H2ZM5 15C3.34315 15 2 13.6569 2 12H-2C-2 15.866 1.13401 19 5 19V15ZM15 12C15 
+                            13.6569 13.6569 15 12 15V19C15.866 19 19 15.866 19 12H15ZM12 2C13.6569 2 15 3.34315 15 5H19C19 
+                            1.13401 15.866 -2 12 -2V2ZM5 -2C1.13401 -2 -2 1.13401 -2 5H2C2 3.34315 3.34315 2 5 2V-2Z" 
+                            fill="#FB77A1" mask="url(#path-1-inside-1)"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="rectangle"></div>
+            </div>
+
+            <div id="parent-rect">
+                <div id="parent-align">
+                    <input type="text" class="text"/>
+                        <!-- Read next chapter of the book in Danish -->
+
+                    <button class="icon" onclick="changeIcon()">
+                        <svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1" fill="white">
+                            <path d="M0 5C0 2.23858 2.23858 0 5 0H12C14.7614 0 17 2.23858 17 5V12C17 14.7614 14.7614 17 12 
+                            17H5C2.23858 17 0 14.7614 0 12V5Z"/></mask><path d="M5 2H12V-2H5V2ZM15 5V12H19V5H15ZM12 15H5V19H
+                            12V15ZM2 12V5H-2V12H2ZM5 15C3.34315 15 2 13.6569 2 12H-2C-2 15.866 1.13401 19 5 19V15ZM15 12C15 
+                            13.6569 13.6569 15 12 15V19C15.866 19 19 15.866 19 12H15ZM12 2C13.6569 2 15 3.34315 15 5H19C19 
+                            1.13401 15.866 -2 12 -2V2ZM5 -2C1.13401 -2 -2 1.13401 -2 5H2C2 3.34315 3.34315 2 5 2V-2Z" 
+                            fill="#FB77A1" mask="url(#path-1-inside-1)"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="rectangle"></div>
+            </div>
+
+            <div id="parent-rect">
+                <div id="parent-align">
+                    <input type="text" class="text"/>
+                        <!-- Do the math for next monday -->
+
+                    <button class="icon" onclick="changeIcon()">
+                        <svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1" fill="white">
+                            <path d="M0 5C0 2.23858 2.23858 0 5 0H12C14.7614 0 17 2.23858 17 5V12C17 14.7614 14.7614 17 12 
+                            17H5C2.23858 17 0 14.7614 0 12V5Z"/></mask><path d="M5 2H12V-2H5V2ZM15 5V12H19V5H15ZM12 15H5V19H
+                            12V15ZM2 12V5H-2V12H2ZM5 15C3.34315 15 2 13.6569 2 12H-2C-2 15.866 1.13401 19 5 19V15ZM15 12C15 
+                            13.6569 13.6569 15 12 15V19C15.866 19 19 15.866 19 12H15ZM12 2C13.6569 2 15 3.34315 15 5H19C19 
+                            1.13401 15.866 -2 12 -2V2ZM5 -2C1.13401 -2 -2 1.13401 -2 5H2C2 3.34315 3.34315 2 5 2V-2Z" 
+                            fill="#FB77A1" mask="url(#path-1-inside-1)"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="rectangle"></div>
+            </div>
+
+            <div id="title-parent-2">
+                <div class="content-title">
+                    <strong><p>21/06/2021</p></strong>
                 </div>
             </div>
 
-            <div id="parent-4">
-                <div class="content-bloc-4">
-                    <p>Send collaboration files to Jerusha</p>
+            <div id="parent-rect">
+                <div id="parent-align">
+                    <input type="text" class="text"/>
+                        <!-- Send the finished assignement -->
+
+                    <button class="icon" onclick="changeIcon()">
+                        <svg   viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5 0C2.23858 0 0 2.23858 0 5V12C0 14.7614 2.23858 17 5 17H12C14.7614 17 17 14.7614 17 12V5C17 2.23858 14.7614 0 12 0H5ZM6.875 11.2083L13.375 4.70834L12.6113 3.94459L6.875 9.67542L4.65958 7.46542L3.89583 8.22917L6.875 11.2083ZM3.625 12.2917V13.375H13.375V12.2917H3.625Z" fill="#FB77A1"/>
+                        </svg>
+                    </button>
                 </div>
-                <div class ="task-empty">
-                    <svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <mask id="path-1-inside-1" fill="white">
-                        <path d="M0 5C0 2.23858 2.23858 0 5 0H12C14.7614 0 17 2.23858 17 5V12C17 14.7614 14.7614 17 12 
-                        17H5C2.23858 17 0 14.7614 0 12V5Z"/></mask><path d="M5 2H12V-2H5V2ZM15 5V12H19V5H15ZM12 15H5V19H
-                        12V15ZM2 12V5H-2V12H2ZM5 15C3.34315 15 2 13.6569 2 12H-2C-2 15.866 1.13401 19 5 19V15ZM15 12C15 
-                        13.6569 13.6569 15 12 15V19C15.866 19 19 15.866 19 12H15ZM12 2C13.6569 2 15 3.34315 15 5H19C19 
-                        1.13401 15.866 -2 12 -2V2ZM5 -2C1.13401 -2 -2 1.13401 -2 5H2C2 3.34315 3.34315 2 5 2V-2Z" 
-                        fill="#FB77A1" mask="url(#path-1-inside-1)"/>
-                    </svg>
+                <div class="rectangle"></div>
+            </div>
+            
+            <div id="parent-rect"></div>
+                <div id="parent-align">
+                    <input type="text" class="text"/>
+                        <!--Read english book chapter 6-->
+
+                    <button class="icon" onclick="changeIcon()">
+                        <svg   viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5 0C2.23858 0 0 2.23858 0 5V12C0 14.7614 2.23858 17 5 17H12C14.7614 17 17 14.7614 17 12V5C17 2.23858 14.7614 0 12 0H5ZM6.875 11.2083L13.375 4.70834L12.6113 3.94459L6.875 9.67542L4.65958 7.46542L3.89583 8.22917L6.875 11.2083ZM3.625 12.2917V13.375H13.375V12.2917H3.625Z" fill="#FB77A1"/>
+                        </svg>
+                    </button>
                 </div>
-                <div class ="sub-category-enfant">
-                    <div class="rectangle-sub-category"></div>
-                </div>
+                <div class="rectangle"></div>
             </div>
 
-            <div id="parent-5">
-                <div class="content-bloc-5">
-                    <p>Finish the essay collaboration</p>
-                </div>
-                <div class ="task-empty">
-                    <svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <mask id="path-1-inside-1" fill="white">
-                        <path d="M0 5C0 2.23858 2.23858 0 5 0H12C14.7614 0 17 2.23858 17 5V12C17 14.7614 14.7614 17 12 
-                        17H5C2.23858 17 0 14.7614 0 12V5Z"/></mask><path d="M5 2H12V-2H5V2ZM15 5V12H19V5H15ZM12 15H5V19H
-                        12V15ZM2 12V5H-2V12H2ZM5 15C3.34315 15 2 13.6569 2 12H-2C-2 15.866 1.13401 19 5 19V15ZM15 12C15 
-                        13.6569 13.6569 15 12 15V19C15.866 19 19 15.866 19 12H15ZM12 2C13.6569 2 15 3.34315 15 5H19C19 
-                        1.13401 15.866 -2 12 -2V2ZM5 -2C1.13401 -2 -2 1.13401 -2 5H2C2 3.34315 3.34315 2 5 2V-2Z" 
-                        fill="#FB77A1" mask="url(#path-1-inside-1)"/>
-                    </svg>
-                </div>
-                <div class="rectangle-4">
-                </div>
-            </div>
 
-            <div id="parent-6">
-                <div class="content-bloc-6">
-                    <p>Read next chapter of the book in Danish</p>
-                </div>
-                <div class ="task-empty">
-                    <svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <mask id="path-1-inside-1" fill="white">
-                        <path d="M0 5C0 2.23858 2.23858 0 5 0H12C14.7614 0 17 2.23858 17 5V12C17 14.7614 14.7614 17 12 
-                        17H5C2.23858 17 0 14.7614 0 12V5Z"/></mask><path d="M5 2H12V-2H5V2ZM15 5V12H19V5H15ZM12 15H5V19H
-                        12V15ZM2 12V5H-2V12H2ZM5 15C3.34315 15 2 13.6569 2 12H-2C-2 15.866 1.13401 19 5 19V15ZM15 12C15 
-                        13.6569 13.6569 15 12 15V19C15.866 19 19 15.866 19 12H15ZM12 2C13.6569 2 15 3.34315 15 5H19C19 
-                        1.13401 15.866 -2 12 -2V2ZM5 -2C1.13401 -2 -2 1.13401 -2 5H2C2 3.34315 3.34315 2 5 2V-2Z" 
-                        fill="#FB77A1" mask="url(#path-1-inside-1)"/>
-                    </svg>
-                </div>
-                <div class="rectangle">
-                </div>
-            </div>
 
-            <div id="parent-7">
-                <div class="content-bloc-7">
-                    <p>Do the math for next monday</p>
-                </div>
-                <div class ="task-empty">
-                    <svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <mask id="path-1-inside-1" fill="white">
-                        <path d="M0 5C0 2.23858 2.23858 0 5 0H12C14.7614 0 17 2.23858 17 5V12C17 14.7614 14.7614 17 12 
-                        17H5C2.23858 17 0 14.7614 0 12V5Z"/></mask><path d="M5 2H12V-2H5V2ZM15 5V12H19V5H15ZM12 15H5V19H
-                        12V15ZM2 12V5H-2V12H2ZM5 15C3.34315 15 2 13.6569 2 12H-2C-2 15.866 1.13401 19 5 19V15ZM15 12C15 
-                        13.6569 13.6569 15 12 15V19C15.866 19 19 15.866 19 12H15ZM12 2C13.6569 2 15 3.34315 15 5H19C19 
-                        1.13401 15.866 -2 12 -2V2ZM5 -2C1.13401 -2 -2 1.13401 -2 5H2C2 3.34315 3.34315 2 5 2V-2Z" 
-                        fill="#FB77A1" mask="url(#path-1-inside-1)"/>
-                    </svg>
-                </div>
-                <div class="rectangle">
-                </div>
-            </div>
 
-            <div id="parent-8">
-                <div class="content-bloc-8">
-                    <p>Send the finished assignement</p>
-                </div>
-                <div class="task-complete">
-                    <svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5 0C2.23858 0 0 2.23858 0 5V12C0 14.7614 2.23858 
-                    17 5 17H12C14.7614 17 17 14.7614 17 12V5C17 2.23858 14.7614 0 12 0H5ZM6.875 11.2083L13.375 4.70834L
-                    12.6113 3.94459L6.875 9.67542L4.65958 7.46542L3.89583 8.22917L6.875 11.2083ZM3.625 12.2917V13.375H1
-                    3.375V12.2917H3.625Z" fill="#FB77A1"/>
-                    </svg>
-                </div>
-                <div class="rectangle-complete">
-                    <div class="rectangle">
-                    </div>
-                </div>
-            </div>
 
-            <div id="parent-9">
-                <div class="content-bloc-9">
-                    <p>Read english book chapter 6</p>
-                </div>
-                <div class="task-complete">
-                    <svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5 0C2.23858 0 0 2.23858 0 5V12C0 14.7614 2.23858 
-                    17 5 17H12C14.7614 17 17 14.7614 17 12V5C17 2.23858 14.7614 0 12 0H5ZM6.875 11.2083L13.375 4.70834L
-                    12.6113 3.94459L6.875 9.67542L4.65958 7.46542L3.89583 8.22917L6.875 11.2083ZM3.625 12.2917V13.375H1
-                    3.375V12.2917H3.625Z" fill="#FB77A1"/>
-                    </svg>
-                </div>
-                <div class="rectangle-complete">
-                    <div class="rectangle">
-                    </div>
-                </div>
+
+
+
+
+            <!-- <div id="myIconComplete"></div>
+
+            <div id="myIconEmpty"></div> -->
+
+
+
+            <!-- <div class="container">
+                <button id="btnRed">Red</button>
+                <p>ZHdsshfhdkjfghdijdqiuzhfsjdhfbdsbdhj bs hzehrzhtergdq</p>
             </div>
+     -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             <link rel="preconnect" href="https://fonts.gstatic.com">
             <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap"
