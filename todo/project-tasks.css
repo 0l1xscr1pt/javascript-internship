@@ -12,7 +12,8 @@ body{
     min-width: 400px;
 }
 
-#parent-1 {
+#parent-header {
+    top: -20px;
     width: 100%;
     max-width: 830px;
     min-width: 380px;
@@ -23,6 +24,7 @@ body{
     position: relative;
     display: flex;
     align-items: center;
+    z-index: 1;
 }
 
 .round {
@@ -37,11 +39,12 @@ body{
     z-index: 1;
 }
 
-.content-bloc-1 {
+.title {
     margin-left: 20px;
     /* font-size: 2.5vw; */
     font-size: 20px;
     font-family: 'Karla', sans-serif;
+    cursor: default;
     position: relative;
     z-index: 2;
 }
@@ -57,7 +60,7 @@ body{
     z-index: 3;
 }
 
-#parent-2 {
+#parent-rect-add {
     top: -5px;
     width: 100%;
     max-width: 830px;
@@ -65,22 +68,44 @@ body{
     position: relative;
     display: flex;
     align-items: center;
-    margin: 0 auto 40px;
+    margin: 0 auto 80px;
+    z-index: 1;
 }
 
-.content-bloc-2 {
-    left: 70px;
-    font-family: 'Karla', sans-serif;
-    font-size: 21px;
+#parent-align {
+    width: 100%;
+    max-width: 720px;
+    min-width: 380px;
     position: relative;
+    display: flex;
+    align-items: center;
+    margin: -20px auto;
     z-index: 2;
 }
 
-.add-task {
-    left: -80px;
-    width:30px;
-    height:30px;
+.text {
+    left: 20px;
+    margin: 0 auto;
+    font-family: 'Karla', sans-serif;
+    font-size: 21px;
+    width: 100%;
+    height: 60px;
+    color: #FFF;
+    background: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    z-index: 2;
+}
+
+.icon {
+    left: -30px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    border: none;
     position: relative;
+    background: transparent;
     z-index: 2;
 }
 
@@ -93,51 +118,16 @@ body{
     z-index: 1;
 }
 
-#title-parent {
-    width: 100%;
-    max-width: 830px;
-    min-width: 380px;
-    margin: 0 auto;
-    position: relative;
-}
-
-.content-title {
-    width: 100%;
-    top: 10px;
-    color: crimson;
-    font-family: 'Karla', sans-serif;
-    font-size: 21px;
-    position: relative;
-    z-index: 2;
-}
-
-#parent-3 {
-    top: 5px;
-    margin-bottom: 10px;
+#parent-rect {
+    top: 20px;
     width: 100%;
     max-width: 830px;
     min-width: 380px;
     position: relative;
     display: flex;
     align-items: center;
-    margin: 0 auto;
-    z-index: 2;
-}
-
-.content-bloc-3 {
-    left: 70px;
-    font-family: 'Karla', sans-serif;
-    font-size: 21px;
-     position: relative;
-    z-index: 2;
-}
-
-.task-empty {
-    left: -265px;
-    width:30px;
-    height:30px;
-    position: relative;
-    z-index: 2;
+    margin: 0 auto 80px;
+    z-index: 1;
 }
 
 .rectangle {
@@ -149,127 +139,29 @@ body{
     z-index: 1;
 }
 
-
-
-#parent-4 {
-    top: 20px;
+#title-parent {
     width: 100%;
     max-width: 830px;
     min-width: 380px;
     margin: 0 auto;
-    position: relative;
-    display: flex;
-    align-items: center;
-    z-index: 2;
-}
-
-.content-bloc-4 {
-    left: 70px;
-    font-family: 'Karla', sans-serif;
-    font-size: 21px;
-     position: relative;
-    z-index: 2;
-}
-
-.task-empty-2 {
-    left: -310px;
-    width:30px;
-    height:30px;
-    position: relative;
-    z-index: 2;
-}
-
-#parent-5 {
-    top: 35px;
-    width: 100%;
-    max-width: 830px;
-    min-width: 380px;
-    margin: 0 auto;
-     position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.content-bloc-5 {
-    left: 70px;
-    font-family: 'Karla', sans-serif;
-    font-size: 21px;
-     position: relative;
-    z-index: 2;
-}
-
-.task-empty-3 {
-    left: -265px;
-    width:30px;
-    height:30px;
-    position: relative;
-    z-index: 2;
-}
-
-#parent-6 {
-    top: 50px;
-    width: 100%;
-    max-width: 830px;
-    min-width: 380px;
-    margin: 0 auto;
-     position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.content-bloc-6 {
-    left: 70px;
-    font-family: 'Karla', sans-serif;
-    font-size: 21px;
-     position: relative;
-    z-index: 2;
-}
-
-.task-empty-4 {
-    left: -362px;
-    width:30px;
-    height:30px;
-    position: relative;
-    z-index: 2;
-}
-
-#parent-7 {
-    top: 65px;
-    width: 100%;
-    max-width: 830px;
-    min-width: 380px;
-    margin: 0 auto;
-     position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.content-bloc-7 {
-    left: 70px;
-    font-family: 'Karla', sans-serif;
-    font-size: 21px;
-     position: relative;
-    z-index: 2;
-}
-
-.task-empty-5 {
-    left: -258px;
-    width:30px;
-    height:30px;
+    cursor: default;
     position: relative;
     z-index: 2;
 }
 
 #title-parent-2 {
+    top: 20px;
     width: 100%;
     max-width: 830px;
     min-width: 380px;
     margin: 0 auto;
+    cursor: default;
     position: relative;
+    z-index: 2;
 }
 
-.content-title-2 {
-    top: 100px;
+.content-title {
+    width: 100%;
     color: crimson;
     font-family: 'Karla', sans-serif;
     font-size: 21px;
@@ -277,65 +169,54 @@ body{
     z-index: 2;
 }
 
-#parent-8 {
-    top: 177px;
-    width: 100%;
-    max-width: 830px;
-    min-width: 380px;
-     position: relative;
+
+/* text-decoration: line-through; */
+
+
+
+
+
+
+/* html, body, #myIconComplete {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+}
+
+
+html, body, #myIconEmpty {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .container {
     display: flex;
     align-items: center;
-    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.content-bloc-8 {
-    left: 70px;
-    font-family: 'Karla', sans-serif;
-    font-size: 21px;
-     position: relative;
-    z-index: 2;
+p {
+    width: 40%;
+    font-weight: bold;
+    font-size: 20px;
+    opacity: 0;
 }
 
-.task-complete {
-    left: -278px;
-    width:30px;
-    height:30px;
-    position: relative;
-    z-index: 2;
-}
-
-#parent-9 {
-    top: 30px;
-    width: 100%;
-    max-width: 830px;
-    min-width: 380px;
-     position: relative;
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-}
-
-.content-bloc-9 {
-    left: 70px;
-    font-family: 'Karla', sans-serif;
-    font-size: 21px;
-     position: relative;
-    z-index: 2;
-}
-
-.task-complete-2 {
-    left: -250px;
-    width:30px;
-    height:30px;
-    position: relative;
-    z-index: 2;
-}
-
-.rectangle-complete {
-    width: 100%;
-    height: 70px;
-    background: #24242c;
-    border-radius: 20px;
-    position: absolute;
-    z-index: 1;
-}
+button {
+    padding: 10px 20px;
+    margin: 5px;
+} */
