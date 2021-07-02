@@ -1,7 +1,43 @@
 @charset "UTF-8";
 
+@media screen and (max-width: 849px) {
+    h3 {
+        font-size: 40px;
+        margin-bottom: 60px;
+    }
+
+    #parent-align {
+        margin: -40px 0;
+    }
+  
+}
+
+@media screen and (min-width: 850px) {
+    h3 {
+        font-size: 50px;
+        margin-bottom: 70px;
+    } 
+
+    #parent-align {
+        margin: -40px 15px;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    h3 {
+        font-size: 60px;
+        margin-bottom: 90px;
+    }   
+
+    #parent-align {
+        margin: -40px 20px;
+    }
+}
+
+
 body{
-    background-color: #17181E;
+    background-color: greenyellow;
+    /* background-color: #17181E; */
     color: white;
 }
 
@@ -9,7 +45,7 @@ body{
     margin: 0px auto;
     width: 100%;
     max-width: 1000px;
-    min-width: 400px;
+    min-width: 300px;
 }
 
 #parent-header {
@@ -36,12 +72,21 @@ body{
     -moz-border-radius:100px;
     -o-border-radius:100px;
     border-radius:100px;
+    cursor: pointer;
     z-index: 1;
 }
 
+.before-icon {
+    left: -50px;
+    top: 15px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 2;
+}
+
 .title {
-    margin-left: 20px;
-    /* font-size: 2.5vw; */
+    margin-left: -15px;
     font-size: 20px;
     font-family: 'Karla', sans-serif;
     cursor: default;
@@ -50,58 +95,13 @@ body{
 }
 
 .tree-points {
-    top: -5px;
-    left: 422px;
+    margin: 0 0 0 auto;
     position: relative;
-    /* font-size: 3vw; */
     font-size: 40px;
     color: #2c2c35;
     font-family: 'Karla', sans-serif;
+    cursor: default;
     z-index: 3;
-}
-
-form {
-    left: 80px;
-    width: 100%;
-    max-width: 720px;
-    min-width: 380px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin: -20px auto;
-    z-index: 2;
-}
-
-p {
-    margin: 0 auto;
-    margin-left: 145px;
-    font-family: 'Karla', sans-serif;
-    font-size: 21px;
-    z-index: 2;
-}
-
-#list {
-    margin: -20px auto;
-    list-style: none;
-    font-family: 'Karla', sans-serif;
-    font-size: 21px;
-    color: #FFF;
-}
-
-#toDoContainer {
-    /* left: 20px;
-    margin: 0 auto; 
-    background: transparent;
-    border: none;
-    outline: none;
-    position: absolute;
-    width: 100%;
-    height: 60px;
-    */
-    font-family: 'Karla', sans-serif;
-    font-size: 21px;
-    color: #FFF;
-    z-index: 2;
 }
 
 #parent-rect-add {
@@ -116,7 +116,8 @@ p {
     z-index: 1;
 }
 
-/* #parent-align-add {
+#parent-align-add {
+    left: 5px;
     width: 100%;
     max-width: 720px;
     min-width: 380px;
@@ -125,22 +126,10 @@ p {
     align-items: center;
     margin: -20px auto;
     z-index: 2;
-} */
-
-
-#parent-align {
-    width: 100%;
-    max-width: 720px;
-    min-width: 380px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin: -40px auto;
-    z-index: 2;
 }
 
 #textAdd {
-    /* left: 20px; */
+    left: -20px;
     margin: 0 auto;
     font-family: 'Karla', sans-serif;
     font-size: 21px;
@@ -155,6 +144,139 @@ p {
 }
 
 #iconAdd {
+    left: -70px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    background: transparent;
+    z-index: 2;
+}
+
+form {
+    left: 80px;
+    width: 100%;
+    max-width: 720px;
+    min-width: 380px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: -20px auto;
+    z-index: 2;
+}
+
+
+svg {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    background: transparent;
+    z-index: 2;
+}
+
+.rectangle-with-border {
+    width: 100%;
+    height: 70px;
+    border: 3px solid #24242c;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 1;
+}
+
+
+#title-parent {
+    width: 100%;
+    max-width: 830px;
+    min-width: 380px;
+    margin: 0 auto;
+    cursor: default;
+    position: relative;
+    z-index: 2;
+}
+
+.content-title {
+    top: -170px;
+    width: 100%;
+    color: crimson;
+    font-family: 'Karla', sans-serif;
+    font-size: 21px;
+    position: static;
+    z-index: 2;
+} 
+
+#title-parent-2 {
+    width: 100%;
+    max-width: 830px;
+    min-width: 380px;
+    margin: 0 auto;
+    cursor: default;
+    position: relative;
+    z-index: 2;
+}
+
+form {
+    left: 50px;
+    width: 100%;
+    max-width: 720px;
+    min-width: 380px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: -20px auto;
+    z-index: 2;
+}
+
+#parent-rect {
+    top: 60px;
+    width: 100%;
+    max-width: 830px;
+    min-width: 380px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.rectangle {
+    margin-bottom: 100px;
+    left: -20px;
+    top: -40px;
+    width: 100%;
+    height: 70px;
+    background:#24242c;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 1;
+}
+
+#list {
+    margin: 0 auto;
+    list-style: none;
+    font-family: 'Karla', sans-serif;
+    font-size: 21px;
+    color: #FFF;
+    z-index: 2;
+}
+
+#parent-align {
+    left: -10px;
+    top: 10px;
+    width: 100%;
+    max-width: 720px;
+    min-width: 380px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: -40px auto;
+    z-index: 2;
+}
+
+.icon {
     left: -30px;
     width: 45px;
     height: 45px;
@@ -162,6 +284,21 @@ p {
     border: none;
     position: relative;
     background: transparent;
+    z-index: 2;
+}
+
+#text-without-task {
+    left: 70px;
+    margin-top: 10px;
+    font-family: 'Karla', sans-serif;
+    font-size: 21px;
+    width: 100%;
+    height: 60px;
+    color: #FFF;
+    background: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
     z-index: 2;
 }
 
@@ -188,137 +325,6 @@ svg {
     background: transparent;
     z-index: 2;
 }
-
-.icon {
-    left: -30px;
-    width: 45px;
-    height: 45px;
-    cursor: pointer;
-    border: none;
-    position: relative;
-    background: transparent;
-    z-index: 2;
-}
-
-.rectangle-with-border {
-    width: 100%;
-    height: 70px;
-    border: 3px solid #24242c;
-    border-radius: 20px;
-    position: absolute;
-    z-index: 1;
-}
-
-#parent-rect {
-    /* top: -30px; */
-    /* top: -20px; */
-    top: 60px;
-    left: -20px;
-    width: 100%;
-    max-width: 830px;
-    min-width: 380px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin: 0 auto 80px;
-    z-index: 1;
-}
-
-#rectangle {
-    margin-top: -120px;
-    width: 100%;
-    height: 70px;
-    background:#24242c;
-    border-radius: 20px;
-    position: absolute;
-    z-index: 1;
-}
-
-#rectangleFirst {
-    width: 100%;
-    height: 70px;
-    background:#24242c;
-    border-radius: 20px;
-    position: absolute;
-    z-index: 1;
-}
-
-#title-parent {
-    /* top: -210px; */
-    width: 100%;
-    max-width: 830px;
-    min-width: 380px;
-    margin: 0 auto;
-    cursor: default;
-    position: relative;
-    z-index: 2;
-}
-
-#title-parent-2 {
-    /* top: 20px; */
-    width: 100%;
-    max-width: 830px;
-    min-width: 380px;
-    margin: 0 auto;
-    cursor: default;
-    position: relative;
-    z-index: 2;
-}
-
-.content-title {
-    width: 100%;
-    color: crimson;
-    font-family: 'Karla', sans-serif;
-    font-size: 21px;
-    position: relative;
-    z-index: 2;
-}
-
-
-/* text-decoration: line-through; */
-
-
-
-
-
-#myContener {
-    width: 150px;
-    height: 150px;
-    margin: auto;
-    text-align: center;
-}
-
-.myContener {
-    background: url('<svg width="50" height="50" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="path-1-inside-1" fill="white"><path d="M0 5C0 2.23858 2.23858 0 5 0H12C14.7614 0 17 2.23858 17 5V12C17 14.7614 14.7614 17 12 17H5C2.23858 17 0 14.7614 0 12V5Z"/></mask><path d="M5 2H12V-2H5V2ZM15 5V12H19V5H15ZM12 15H5V19H12V15ZM2 12V5H-2V12H2ZM5 15C3.34315 15 2 13.6569 2 12H-2C-2 15.866 1.13401 19 5 19V15ZM15 12C15 13.6569 13.6569 15 12 15V19C15.866 19 19 15.866 19 12H15ZM12 2C13.6569 2 15 3.34315 15 5H19C19 1.13401 15.866 -2 12 -2V2ZM5 -2C1.13401 -2 -2 1.13401 -2 5H2C2 3.34315 3.34315 2 5 2V-2Z" fill="#FB77A1" mask="url(#path-1-inside-1)"/></svg>') no-repeat;
-}
-
-
-
-
-
-
-/* html, body, #myIconComplete {
-    width: 100px;
-    height: 100px;
-    margin: 0;
-}
-
-
-html, body, #myIconEmpty {
-    width: 100px;
-    height: 100px;
-    margin: 0;
-} */
-
-
-
-
-
-
-
-
-
-
 
 
 
